@@ -12,14 +12,14 @@ import android.widget.ImageView;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView imageView;
+    ImageView img;
     Switch sw;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        View ImageView = findViewById(R.id.imageView);
-        sw = findViewById(R.id.switch2);
+        View ImageView = findViewById(R.id.flagview);
+        sw = findViewById(R.id.Spin_switch);
         sw.setOnCheckedChangeListener( (btn, isChecked) -> {
             if (isChecked)
             {
